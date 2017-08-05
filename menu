@@ -1,0 +1,78 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+//may mali pa sa loop after taking orders, use while ata
+
+
+typedef struct {
+	int ord;
+	int qty;
+	int prc;
+} data;
+
+
+int main()
+{
+int idnum;
+string name,addord;
+
+
+
+
+login:
+cin.clear();
+fflush(stdin);
+cout << "Enter Name: ";
+getline(cin, name);
+cout << "\nEnter ID Number: ";
+cin >> idnum;
+
+
+if (name=="John Gacal" && idnum== 11514272 || name =="john gacal" && idnum== 11514272 || name=="David Zinampan" && idnum==11527900 || name=="david zinampan" && idnum==11527900)
+goto welcome;
+
+else 
+{
+cout << "\nInvalid Name and ID Number. Try again!\n\n";
+goto login;
+}
+
+welcome:
+system("cls");
+cout << "\t\t\t\t  WELCOME\n\n";
+cout << "\t\t\t\tLBYEC72 EB1\n\n";
+cout << "\t\t     David Zinampan and John Gacal\n\n\n\n";
+system("pause");
+goto menu;
+
+menu:
+system("cls");
+cout << "\t\t\t\tBarn Manila";
+cout << "\n\n\t\t\t\t   MENU";
+
+cout << "\n\nAppetizers:\t\t\t\tSandwiches:";
+cout << "\n\n101   Hungarian Platter     \tP220\t204   Chicken Pesto        \tP140";
+cout << "\n\n102   Potato Hash           \tP160\t205   Roast Beef           \tP160";
+cout << "\n\n103   Fried Sisig Dumplings \tP180\t206   Salmon Burger        \tP150";
+
+cout << "\n\nAll Day Breakfast:\t\t\tPasta:";
+cout << "\n\n307   Beef Tapa             \tP170\t411   Pesto w/ Chicken     \tP150";
+cout << "\n\n308   Corned Beef           \tP170\t412   Bolognese            \tP150";
+cout << "\n\n309   Longganisa            \tP160\t413   Carbonara            \tP150";
+cout << "\n\n310   Smoked Milkfish       \tP160\t414   Baked Macaroni       \tP150";
+
+cout << "\n\n\t\t\t\t   Entrees:";
+cout << "\n\n515   Roast Chicken         \tP190\t519   Buttermilk Porkchops \tP180";
+cout << "\n\n516   Shitake Chicken       \tP180\t520   Beefy Mushroom       \tP175";
+cout << "\n\n517   Signature Steak       \tP190\t521   Pork Steak           \tP175";
+cout << "\n\n518   Coq Au Vin            \tP190\t522   Korean Beef Stew     \tP180";
+cout << "\n\n\n";
+system("pause");
+
+
+
+
+return 0;
+}
