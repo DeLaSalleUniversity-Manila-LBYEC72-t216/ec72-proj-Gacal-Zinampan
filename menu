@@ -3,7 +3,7 @@
 
 using namespace std;
 
-//may mali pa sa loop after taking orders, use while ata
+
 
 
 typedef struct {
