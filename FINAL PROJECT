@@ -33,6 +33,9 @@ cin >> idnum;
 if (name=="John Gacal" && idnum== 11514272 || name =="john gacal" && idnum== 11514272 || name=="David Zinampan" && idnum==11527900 || name=="david zinampan" && idnum==11527900)
 goto welcome;
 
+
+
+
 else 
 {
 cout << "\nInvalid Name and ID Number. Try again!\n\n";
@@ -79,7 +82,6 @@ cout << "\n\n1. Back to Menu \n2. Take Order \n3. Exit";
 
 cout << "\n\n\nChoose an option: ";
 cin >> opt;
-
 switch(opt)
 {
 case 1:
